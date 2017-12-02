@@ -4,7 +4,7 @@ use Getopt::Std;
 use strict;
 
 our ($opt_d, $opt_v, $opt_f, $opt_h, $opt_H, $opt_p, $opt_q, $opt_F, $opt_S, $opt_Q, $opt_o, $opt_N, $opt_E, $opt_C, $opt_m, $opt_I, $opt_c, $opt_P, $opt_a, $opt_t, $opt_r, $opt_O, $opt_X, $opt_k, $opt_V, $opt_M, $opt_x, $opt_A, $opt_T);
-getopts('htaHSCEAP:d:v:f:p:q:F:Q:s:N:m:I:c:r:O:X:k:V:M:x:T:') || Usage();
+getopts('htaHSCEAP:d:v:f:p:q:F:Q:o:s:N:m:I:c:r:O:X:k:V:M:x:T:') || Usage();
 ($opt_h || $opt_H) && Usage();
 
 my $TotalDepth = $opt_d ? $opt_d : 3;
